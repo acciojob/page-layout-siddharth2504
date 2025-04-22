@@ -1,13 +1,20 @@
 import React from "react";
 
-const PageLayout = ({header, children, footer}) =>{
-    return(
-        <div>
-            {header}
-            <main>{children}</main>
-            {footer}
-        </div>
-    )
-}
+
+function PageLayout() {
+    return (
+      <div>
+        <h1>Welcome to my website</h1>   {/* Hardcoded header */}
+        <main>
+          <p>This is the content of my website.</p>   {/* Hardcoded content */}
+        </main>
+        <footer>
+          <p>© 2023 My Website. All rights reserved.</p>   {/* Hardcoded footer */}
+        </footer>
+      </div>
+    );
+  }
+  
+  
 
 export default PageLayout;
